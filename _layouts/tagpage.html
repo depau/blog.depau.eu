@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<div class="posts">
+    <p class="text-center"><i class="remixicon-price-tag-3-line"></i> <a href="{{ site.baseurl }}/tag/">All tags</a></p>
+
+    <h1>{{ page.title | replace_first: "Tag: ", '<i class="remixicon-price-tag-3-line"></i> ' }}</h1>
+
+    {% assign tagposts = site.tags[page.tag] %}
+    {% include postlist.html posts=tagposts %}
+</div>

@@ -1,0 +1,6 @@
+<span class="tags">Tags:
+  {% for tag in include.tags %}
+      {% capture tag_name %}{{ tag }}{% endcapture %}
+      <a href="/tag/{{ tag_name }}" class="tag"><code><nobr>{{ tag_name }}</nobr></code></a>
+  {% endfor %}
+</span>

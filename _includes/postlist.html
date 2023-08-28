@@ -1,0 +1,13 @@
+{% for post in include.posts %}
+<article class="post">
+
+    <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    {% include tags.html tags=post.tags %}
+
+    <div class="entry">
+        {{ post.excerpt }}
+    </div>
+
+    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a> &bullet; {% include postmeta.html post=post short=true %}
+</article>
+{% endfor %}
