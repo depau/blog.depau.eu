@@ -2,7 +2,7 @@
 layout: post
 title: Testing Android apps USB communication on GitHub Actions with QEMU/KVM
 tags: devops etchdroid android
-image:
+image: /images/2025-04-05-android-usb-testing-with-qemu-kvm/image.png
 ---
 
 Many years ago, I started developing [EtchDroid](https://etchdroid.app/) as a hobby, free-software project born out of
@@ -103,7 +103,7 @@ OK
 ```
 
 ![Bliss OS running in QEMU]({{ site.baseurl }}/images/2025-04-05-android-usb-testing-with-qemu-kvm/blissos.png)
-![QEMU USB drive detected]({{ site.baseurl }}/images/2025-04-05-android-usb-testing-with-qemu-kvm/blissos-qemu-usb.png)
+![USB drive unplugged]({{ site.baseurl }}/images/2025-04-05-android-usb-testing-with-qemu-kvm/image.png)
 
 With the VM running, the first part of the job was done. But what if the tests don't work on GitHub Actions?
 I can't see the screen. So, for the pipeline, I decided to run [Xvfb](https://en.wikipedia.org/wiki/Xvfb) in the
