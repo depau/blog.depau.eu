@@ -10,12 +10,9 @@ necessity. EtchDroid is a simple app for writing images to USB drives from an An
 access. Over the years, it has become popular, proving useful and reliable for many users. I'm really proud of it.
 
 Unfortunately, the same can't be said for Android's USB APIs, USB drives, USB OTG adapters, USB ports, and Android
-devices: they’re all unreliable.
-Some time ago, I decided to address this issue by adding an essential feature: the ability to resume writing
-whenever the process is interrupted.
-I've rewritten the app's UI and backend to support this feature.
-Now, it's not only
-prettier and more user-friendly, but it's also more reliable than ever.
+devices: they’re all unreliable. Some time ago, I decided to address this issue by adding an essential feature: the
+ability to resume writing whenever the process is interrupted. I've rewritten the app's UI and backend to support this
+feature. Now, it's not only prettier and more user-friendly, but it's also more reliable than ever.
 
 <!--more-->
 
