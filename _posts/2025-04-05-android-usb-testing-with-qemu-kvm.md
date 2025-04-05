@@ -33,7 +33,7 @@ This left me with one option: run Android in another virtualization software. I 
 granular VM and hardware control, and no need for bespoke kernel modules like VirtualBox.
 
 I selected the [Bliss OS](https://blissos.org/) Android distribution, an actively maintained Android-x86 distribution
-based on Android 13 — at the time of writing—reasonably up to date.
+based on Android 13 — at the time of writing reasonably up to date.
 
 After minor adjustments, I easily ran Bliss OS in QEMU with an emulated, hot-pluggable USB drive. Bliss OS's ISO
 contains the kernel, initrd, and system image, making booting straightforward with `-kernel`, `-initrd`, `-append`, and
@@ -105,15 +105,15 @@ OK
 With the VM running, the first part of the job was done. But what if the tests don't work on GitHub Actions?
 I can't see the screen. So, for the pipeline, I decided to run [Xvfb](https://en.wikipedia.org/wiki/Xvfb) in the
 background and use [FFmpeg](https://en.wikipedia.org/wiki/FFmpeg) to record the screen. The recording can then be
-uploaded to the GitHub Actions artifacts, so that I can check what went wrong.
+uploaded to the GitHub Actions artifacts, so I can check what went wrong.
 
 ## The qemu-kvm-action
 
-I wrote a [GitHub Action](https://github.com/marketplace/actions/run-with-qemu-vm) to run QEMU/KVM independently of
-EtchDroid, allowing others to reuse this setup. The action sets up the VM, records the screen, and executes a provided
-test script.
+I wrote a [GitHub Action](https://github.com/marketplace/actions/run-with-qemu-vm) so I could test the code that runs
+QEMU/KVM independently of EtchDroid, as well as allowing others to reuse my setup. The action sets up the VM, records
+the screen, and executes a provided test script.
 
-To test it, I
+To test the action, I
 wrote [this simple workflow](https://github.com/etchdroid/qemu-kvm-action/blob/main/.github/workflows/test-action.yml)
 that records a few seconds of the VM while running a simple boot sector game,
 [Boot-Man](https://github.com/guyhill/Boot-Man):
