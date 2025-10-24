@@ -229,7 +229,7 @@ The picture you see is my portable oscilloscope from AliExpress. I connected it 
 
 That looked interesting, I thought this was a good way to proceed. However, trying to figure out stuff from a waveform on a whopping 2.7" display isn't the best experience.
 
-So, since the device supports sending waveform data over UART, I wrote a simple viewer for the format in Python, which you can find [here](https://github.com/Depau/dso138-viewer/) on my GitHub.
+So, since the device supports sending waveform data over UART, I wrote a simple viewer for the format in Python, which you can find [here](https://github.com/depau/dso138-viewer/) on my GitHub.
 
 ![Waveform]({{ site.baseurl }}/images/2021-06-12-ir-remote-reveng/wf-power.png)
 {: .waveform}
@@ -569,7 +569,7 @@ For the timer, the remote doesn't count the half hours past 10h. For the first 1
 
 I mean, for 20h you send `30`. WTF?
 
-I then verified this information by writing a simple decoder script in Python. You can find it in [this GitHub Gist](https://gist.github.com/Depau/29d93eb59def8e9be339631fa930866a).
+I then verified this information by writing a simple decoder script in Python. You can find it in [this GitHub Gist](https://gist.github.com/depau/29d93eb59def8e9be339631fa930866a).
 
 ```bash
 $ ./kelon_decoder.py 0x228A000683
@@ -632,6 +632,6 @@ I submitted a pull-request and, at the time of writing, it is being reviewed: [c
 
 Once that's done I will be soldering a simple board on a perfboard to drive the LED, then write a firmware to control it over MQTT.
 
-I also won't get into that because once again it's boring, but if you're into making something like this you can look at [this other firmware](https://github.com/Depau/air-quality-sensor-esp8266-fw/) I wrote for a similar purpose in the past. Nothing too fancy :)
+I also won't get into that because once again it's boring, but if you're into making something like this you can look at [this other firmware](https://github.com/depau/air-quality-sensor-esp8266-fw/) I wrote for a similar purpose in the past. Nothing too fancy :)
 
 Thanks for reading!

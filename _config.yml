@@ -13,7 +13,7 @@ tracking_id: #
 permalink: pretty
 
 footer: yes
-footer_url: "https://github.com/Depau/blog.depau.eu"
+footer_url: "https://github.com/depau/blog.depau.eu"
 footer_text: "Blog source code on GitHub"
 
 excerpt_separator: <!--more-->
@@ -46,4 +46,4 @@ nav:
  - name: "<i class='remixicon-user-2-line'></i> About me"
    link: "https://depau.eu"
  - name: "<i class='remixicon-github-line'></i> GitHub"
-   link: "https://github.com/Depau"
+   link: "https://github.com/depau"

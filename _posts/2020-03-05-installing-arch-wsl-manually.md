@@ -109,7 +109,7 @@ If you're running GNOME GUI utilities, you'll likely run into the following issu
 
 Over time I developed this set of scripts that will fix that for you, creating a session environment file that you will have to make sure is always loaded so programs will run properly:
 
-[https://github.com/Depau/wsl-startup](https://github.com/Depau/wsl-startup)
+[https://github.com/depau/wsl-startup](https://github.com/depau/wsl-startup)
 
 
 ## WSL2
@@ -129,7 +129,7 @@ More info here: [https://stackoverflow.com/a/61110604/1124621](https://stackover
 
 If you're in my same situation and you're using Arch on WSL at work just because you must use Windows, it may be possible you're also using an SSH client called SecureCRT.
 
-If you are, you may want to check out my script [`shcrt`](https://github.com/Depau/shcrt). I'm planning to rewrite it in Python using urwid for a better (and faster) experience, but I haven't started yet.
+If you are, you may want to check out my script [`shcrt`](https://github.com/depau/shcrt). I'm planning to rewrite it in Python using urwid for a better (and faster) experience, but I haven't started yet.
 
 *That's it* ;)
 
