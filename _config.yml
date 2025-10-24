@@ -18,9 +18,6 @@ footer_text: "Blog source code on GitHub"
 
 excerpt_separator: <!--more-->
 
-cookies: yes
-cookies_url: "https://depau.eu/cookies"
-
 sass:
     style: compressed
     sass_dir: _sass
